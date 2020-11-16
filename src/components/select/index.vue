@@ -11,13 +11,14 @@
   </el-select>
 </template>
 
-<script lang='ts'>
+<script>
+
 export default {
-  name: 'select',
-  props: ['options'],
+  name: "select",
+  props: ["options"],
   methods: {
     onChange(e) {
-      this.$emit('onchange', e)
+      this.$emit("onchange", e);
     },
   },
 };
