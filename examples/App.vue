@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <GJButton></GJButton>
-    <!-- <GJSelect></GJSelect> -->
+    <!-- <ToButton></ToButton> -->
+    <to-button></to-button>
   </div>
 </template>
 
 <script>
-import { GJButton } from "../packages/index";
+import { ToButton } from "../packages/index";
 export default {
   name: 'App',
   components: {
-    GJButton,
+    ToButton,
   }
 }
 </script>

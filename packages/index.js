@@ -1,26 +1,18 @@
-import GJSelect from "./select/index";
-import GJButton from "./button/index";
+import ToSelect from "./select/index";
+import ToButton from "./button/index";
 
-const components = [GJSelect, GJButton];
+const components = [ToSelect, ToButton];
 
 function install(Vue) {
-  components.map = (component) => {
+  components.forEach((component) => {
     Vue.component(component.name, component);
-  };
+  });
 }
 
 if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 
-export {
-  install,
-  GJSelect,
-  GJButton,
-}
+export { ToSelect, ToButton };
 
-export default {
-  install,
-  GJSelect,
-  GJButton,
-};
+export default { install };

@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: "gj-button",
+  name: "to-button",
 };
 </script>

@@ -12,9 +12,13 @@
 </template>
 
 <script>
-
 export default {
-  name: "gj-select",
+  name: "to-select",
+  data() {
+    return {
+      value: "",
+    };
+  },
   props: ["options"],
   methods: {
     onChange(e) {
