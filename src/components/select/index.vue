@@ -14,7 +14,7 @@
 <script>
 
 export default {
-  name: "select",
+  name: "v-select",
   props: ["options"],
   methods: {
     onChange(e) {
