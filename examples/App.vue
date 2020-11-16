@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-    <select></select>
+    <GJButton></GJButton>
+    <!-- <GJSelect></GJSelect> -->
   </div>
 </template>
 
 <script>
-import { select } from "./../lib/index.common";
+import { GJButton } from "../packages/index";
 export default {
   name: 'App',
   components: {
-    select
+    GJButton,
   }
 }
 </script>
