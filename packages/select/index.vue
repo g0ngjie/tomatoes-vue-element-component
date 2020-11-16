@@ -14,7 +14,7 @@
 <script>
 
 export default {
-  name: "v-select",
+  name: "gj-select",
   props: ["options"],
   methods: {
     onChange(e) {
