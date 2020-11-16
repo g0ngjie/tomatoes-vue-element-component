@@ -1,11 +1,10 @@
 <template>
-  <el-select v-model="value" placeholder="请选择">
+  <el-select @change="onChange" v-model="value" placeholder="请选择">
     <el-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value"
-      @change="onChange"
     >
     </el-option>
   </el-select>
