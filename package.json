@@ -2,29 +2,30 @@
   "name": "@tomatoes/vue-element-component",
   "version": "1.0.0",
   "description": "vue+element-ui公共ui组件库",
+  "files": [
+    "lib"
+  ],
+  "style": "lib/index.css",
   "scripts": {
+    "lib": "vue-cli-service build --target lib --name index --dest lib src/components/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.14.1",
-    "vue": "^3.0.0"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/test-utils": "^2.0.0-0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0",
-    "typescript": "~3.9.3",
-    "vue-jest": "^5.0.0-0"
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
@@ -32,34 +33,17 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/vue3-essential",
+      "plugin:vue/essential",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
-    "overrides": [
-      {
-        "files": [
-          "**/__tests__/*.{j,t}s?(x)",
-          "**/tests/unit/**/*.spec.{j,t}s?(x)"
-        ],
-        "env": {
-          "jest": true
-        }
-      }
-    ]
+    "rules": {}
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ],
-  "jest": {
-    "preset": "@vue/cli-plugin-unit-jest",
-    "transform": {
-      "^.+\\.vue$": "vue-jest"
-    }
-  }
+  ]
 }
