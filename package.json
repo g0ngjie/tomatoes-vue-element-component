@@ -1,6 +1,6 @@
 {
   "name": "@tomatoes/vue-element-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "vue+element-ui公共ui组件库",
   "main": "lib/index.common.js",
   "files": [
